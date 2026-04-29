@@ -1,0 +1,16 @@
+@use "../base/variables" as v;
+.loading{
+    width: 100%;
+    height: 300px;
+    border-radius: 8px;
+    animation: skeleton-loading 1s linear infinite alternate;
+}
+
+@keyframes skeleton-loading {
+    0% {
+        background-color: v.$light; /* FROM Color 1 */
+    }
+    100% {
+        background-color: v.$light-gray; /* TO Color 2 */
+    }
+}

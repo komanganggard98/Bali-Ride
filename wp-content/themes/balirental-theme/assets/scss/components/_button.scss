@@ -1,0 +1,54 @@
+@use "./../base/variables" as v;
+
+%btn-text-white{
+  color: white;
+  &:hover{
+    opacity: .9;
+  }
+}
+
+%btn-text-black{
+  color: v.$secondary;
+  &:hover{
+    background-color: v.$light;
+  }
+}
+
+.btn {
+  display: inline-block;
+  padding: 12px 22px;
+  border-radius: 6px;
+  font-weight: 600;
+  transition: all .25s;
+  border: 0;
+  
+  &:hover{
+    cursor: pointer;
+  }
+
+  &--sm{
+    padding: 8px 18px;
+  }
+
+  &--primary{
+    background: v.$primary;
+    @extend %btn-text-white;
+  }
+
+  &--secondary{
+    background: v.$secondary;
+    @extend %btn-text-white;
+  }
+
+  &--green{
+    background: v.$green;
+    @extend %btn-text-white;
+  }
+
+  &--outline{
+    border: 1px solid v.$light-gray;
+    background-color: white;
+    @extend %btn-text-black;
+  }
+
+}

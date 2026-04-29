@@ -1,0 +1,29 @@
+.bike-preview {
+
+  padding: 80px 0;
+  
+  .section__description{
+    text-align: center;
+    margin-top: 1.25rem;
+  }
+
+  .grid {
+    margin-top: 40px;
+  }
+  
+  .btn__all-container{
+    display: flex;
+    justify-content: center;
+    padding: 2rem 0;
+    .btn__secondary{
+      margin:auto 0;
+    }
+  }
+}
+
+
+@media(max-width:768px){
+  .bike-preview{
+    padding:50px 0;
+  }
+}

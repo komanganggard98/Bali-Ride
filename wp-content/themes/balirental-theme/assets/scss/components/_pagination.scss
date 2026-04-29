@@ -1,0 +1,23 @@
+.pagination {
+
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 40px;
+
+}
+
+.pagination a {
+
+  padding: 8px 14px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+
+}
+
+.pagination a.active {
+
+  background: #ff6b00;
+  color: white;
+
+}

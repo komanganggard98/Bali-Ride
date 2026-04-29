@@ -1,0 +1,149 @@
+@use "../base/variables" as v;
+
+%filter-input-style{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap:.5rem;
+
+  .btn{
+    display: flex;
+    align-items: center;
+    white-space: nowrap;
+  }
+}
+
+.bikes {
+  padding: 20px 0;
+  
+  &__header{
+    &__top{
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    &__bottom{
+      height: 0;
+      width:100%;
+      opacity: 0;
+      transition: v.$transition;
+      overflow: hidden;
+      margin-top: -10px;
+      padding: 1rem;
+    }
+
+    &__bottom.show{
+      margin-top: 0;
+      height:100%;
+      width:100%;
+      opacity: 1;
+      transition: v.$transition;
+      overflow: auto;
+      background-color: white;
+    }
+  }
+
+  &__filter{
+    display: flex;
+    gap:.5rem;
+
+    &__container{
+      display: flex;
+      flex-wrap: wrap;
+      row-gap: 1rem;
+      column-gap: 2rem;
+    }
+
+    &__item{
+
+      &__label{
+        font-weight: 600;
+        font-size: 12px;
+      }
+    }
+
+    &__btn__container{
+      display: flex;
+      justify-content: center;
+      padding:1rem;
+    }
+    
+
+  }
+
+  &__search{
+    outline: none;
+    border: 0;
+    background: v.$light;
+    padding: 1rem 2rem;
+    border-radius: 100px;
+    border: 1px solid v.$light;
+
+    &:hover, &:active{
+      background-color: white;
+      border: 1px solid v.$primary;
+    }
+  }
+
+}
+
+.colors__input{
+  @extend %filter-input-style;
+
+  .selected{
+    border:1px solid v.$primary;
+  }
+  span{
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    margin-right:5px;
+    border-radius: 100px;
+    border: 1px solid v.$light-gray;
+  }
+}
+
+.price__input{
+  @extend %filter-input-style;
+
+  .selected{
+    border:1px solid v.$primary;
+  }
+
+  i{
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    margin-right: 12px;
+    font-size: 10px;
+    color: v.$primary;
+  }
+}
+
+.transmission__input{
+  @extend %filter-input-style;
+
+  .selected{
+    border:1px solid v.$primary;
+  }
+}
+
+
+#bike-category {
+  padding: 10px;
+  border: 1px solid #ddd;
+}
+
+#bike-loader{
+  margin-top: 20px;
+}
+
+
+@media(max-width:768px){
+  .bikes {
+    &__header__top{
+      flex-direction: column;
+    }
+  }
+}

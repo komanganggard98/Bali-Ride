@@ -1,0 +1,60 @@
+@use "../base/variables" as v;
+.sngle{
+    padding:20px 0;
+
+    &__left{
+        img{
+            border:1px solid v.$light-gray;
+            border-radius: 10px;
+        }
+    }
+
+    &__right{
+        padding:0 20px;
+        h1{
+            font-size: 24px;
+        }
+        h2{
+            &::after{
+                content: none;
+            }
+            font-size: 48px;
+            margin-bottom: 20px;
+            color:v.$green;
+        }
+        .btn{
+            margin-top:20px;
+        }
+        &__content{
+            &__title{
+                font-weight: 600;
+            }
+        }
+    }
+
+    &__bottom{
+        padding:36px 0;
+    }
+}
+
+@media(max-width:768px){
+    .sngle{
+        &__left{
+            img{
+                width: 100%;
+            }
+        }
+
+        &__right{
+            padding:0;
+
+            .btn{
+                width: 90%;
+                text-align: center;
+                position: fixed;
+                bottom: 10px;
+                left: 5%;
+            }
+        }
+    }
+}

@@ -1,0 +1,22 @@
+@use "../base/variables" as v;
+
+.section{
+    &__title{
+        position: relative;
+        &::after{
+            content: '';
+            width: 10%;
+            height: 4px;
+            background-color: v.$primary;
+            position: absolute;
+            left: 0;
+            bottom: -10px;
+            border-radius: 100px;
+        }
+    }
+
+    &__description{
+        margin-top:.75rem;
+        margin-bottom: 2rem;
+    }
+}

@@ -1,0 +1,53 @@
+@use "../base/variables" as v;
+
+.why {
+
+  padding: 80px 0;
+  background: v.$light;
+
+  &__image img{
+    width:100%;
+  }
+
+  &__content{
+    padding:1rem 2rem;
+  }
+
+  h2{
+    margin-bottom: 2rem;
+  }
+  
+  &__item{
+    display: flex;
+    gap:1rem;
+    margin-bottom: 1.5rem;
+  }
+
+  i {
+    border-radius: 100%;
+    background-color: white;
+    width:48px;
+    height:48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: v.$green;
+    box-shadow: v.$shadow;
+    aspect-ratio: 1/1;
+  }
+}
+
+@media (max-width:768px){
+  .why{
+    padding: 50px 0;
+
+    &__image img{
+      max-width:300px;
+      margin:auto;
+    }
+
+    &__content{
+      padding:.75rem 1.5rem;
+    }
+  }
+}
