@@ -38,5 +38,5 @@
       <p class="card__description"><?php echo esc_html($description); ?></p>
     </a>
   </div>
-  <a href="#" class="btn btn--green">Booking via WA</a>
+  <a href="<?php echo esc_url(br_whatsapp_message($title))?>" target="_blank" class="btn btn--green">Booking via WA</a>
 </article>

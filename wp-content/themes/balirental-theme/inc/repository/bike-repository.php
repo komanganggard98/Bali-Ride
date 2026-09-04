@@ -1,5 +1,4 @@
 <?php
-
 defined('ABSPATH') || exit;
 
 function br_get_bikes($args = []) {

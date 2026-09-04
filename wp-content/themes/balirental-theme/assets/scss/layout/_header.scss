@@ -25,6 +25,13 @@
   top: 0;
   z-index: 9999;
 
+  &__logo{
+    a{
+      display: flex; 
+      align-items: center;
+      gap: .5rem;
+    }
+  }
   .container {
     display: flex;
     justify-content: space-between;

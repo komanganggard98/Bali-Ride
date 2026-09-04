@@ -56,5 +56,9 @@ $description = get_field('description');
   </div>
 </section>
 
+<!-- Recommendation -->
+ <?php get_template_part('template-parts/bike-recommendation');?>
+<!-- Recommendation -->
+
 <?php
     get_footer(); 

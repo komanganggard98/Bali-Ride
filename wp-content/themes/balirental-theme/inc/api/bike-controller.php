@@ -20,6 +20,15 @@ function br_register_bike_rest_route() {
             'search' => [
                 'required' => false,
             ],
+            'transmission' => [
+                'required' => false,
+            ],
+            'colors' => [
+                'required' => false,
+            ],
+            'sort_price' => [
+                'required' => false,
+            ],
         ]
     ]);
 

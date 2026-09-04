@@ -19,7 +19,8 @@
     <div class="container">
         <div class="header__top">
             <div class="header__logo">
-                <a href="<?php echo esc_url(home_url('/')); ?>">
+                <a href="<?php echo esc_url(home_url('/')); ?>" >
+                    <img src="<?php echo get_template_directory_uri();?>/assets/images/BaliRideLogo.svg" style="width:36px;height:36px;" alt="baliride logo">
                     <?php bloginfo('name'); ?>
                 </a>
             </div>

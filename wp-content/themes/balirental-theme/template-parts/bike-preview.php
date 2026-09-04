@@ -4,7 +4,9 @@ $default = [
     'post_type' => 'bike',
     'posts_per_page' => 4,
     'paged' => 1,
-    'post_status' => 'publish'
+    'post_status' => 'publish',
+    'orderby'        => 'date',
+    'order'          => 'DESC', // terbaru dulu
 ];
 $query = new WP_Query($default);
 

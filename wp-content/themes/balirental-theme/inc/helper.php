@@ -1,4 +1,6 @@
 <?php
+defined('ABSPATH') || exit;
+
 function br_format_rupiah($price) {
     return 'Rp ' . number_format($price, 0, ',', '.');
 }

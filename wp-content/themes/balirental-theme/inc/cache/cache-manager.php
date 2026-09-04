@@ -1,5 +1,4 @@
 <?php
-
 defined('ABSPATH') || exit;
 
 function br_cache_get($key, $group = 'br_cache') {
