@@ -7,6 +7,7 @@ function br_register_bike_rest_route() {
     register_rest_route('br/v1', '/bike', [
         'methods'  => 'GET',
         'callback' => 'br_rest_get_bikes',
+        'permission_callback' => '__return_true',
         'args' => [
             'category' => [
                 'required' => false,
